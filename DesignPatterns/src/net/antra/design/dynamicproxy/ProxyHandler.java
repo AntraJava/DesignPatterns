@@ -14,8 +14,12 @@ public class ProxyHandler implements InvocationHandler{
 	@Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object ret = null;
+       
         System.out.println("Before saving..");
-        ret = method.invoke(obj, args);
+        if(method.getName() == "sdf"){
+        		ret = method.invoke(obj, args);
+        }
+       
         System.out.println("After saving..");
         return ret;
     }
