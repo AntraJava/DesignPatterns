@@ -1,6 +1,6 @@
 package net.antra.design.scan;
 
-@Antra(companyValue = "sdf")
+@Antra(companyValue = "hi")
 public class Apple {
 
     @Antra(companyValue = ".Net is OK")

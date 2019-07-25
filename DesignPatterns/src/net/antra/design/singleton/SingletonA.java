@@ -9,7 +9,7 @@ public class SingletonA {
 
 	private SingletonA() {
 		if (instance != null)
-			throw new RuntimeException("Cannot create");
+		throw new RuntimeException("Cannot create");
 	}
 
 	public static SingletonA getInstance(){

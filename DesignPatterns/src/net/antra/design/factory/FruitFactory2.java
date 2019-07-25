@@ -20,5 +20,6 @@ public class FruitFactory2 {
 		FruitFactory2 f2 = new FruitFactory2();
 		f2.createFruit("apple");
 		f2.createFruit("apple");
+
 	}
 }

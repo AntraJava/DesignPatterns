@@ -1,5 +1,8 @@
 package net.antra.design.singleton;
 
+import net.antra.design.scan.Apple;
+
+import java.util.Comparator;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
@@ -7,7 +10,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class SingletonTest {
 	public static void main(String[] args) {
 		
-		Runnable r = ()->System.out.println(SingletonD.getInstance());
+		Runnable r = ()->System.out.println(SingletonB.getInstance());
 //		Runnable r1 = new Runnable(){
 //			public void run() { 
 //				System.out.println(SingletonA.getInstance());		

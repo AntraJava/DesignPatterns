@@ -4,15 +4,10 @@ public class SingletonD {
 	private static volatile SingletonD instance= null;
 	private SingletonD(){}
 	public static SingletonD getInstance(){
-		
 		if(instance == null){
 			synchronized(SingletonD.class){
 				if(instance == null){
-					
 					instance = new SingletonD();
-					//
-					//takes 5 sec
-					//
 				}
 			}
 		}

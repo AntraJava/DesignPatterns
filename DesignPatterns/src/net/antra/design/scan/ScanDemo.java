@@ -10,6 +10,7 @@ public class ScanDemo {
     public static void scanThisClass(String className) {
         try {
             Class clazz = Class.forName(className);
+                        
             //Annotation on top of class
             Annotation[] ann = clazz.getDeclaredAnnotations();
             for (Annotation a : ann) {
@@ -30,7 +31,7 @@ public class ScanDemo {
             //Annotation on Methods
             Method[] methods = clazz.getDeclaredMethods();
             for (Method m : methods) {
-                Annotation[] mAnn = m.getDeclaredAnnotations();
+                Annotation[] mAnn = m.getDeclaredAnnotations();           
                 for (Annotation a : mAnn) {
                     if(a instanceof Antra) {
                         System.out.println(((Antra) a).companyValue());
